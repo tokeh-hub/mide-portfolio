@@ -343,7 +343,6 @@ form{
   margin-top: 20px;
 }
 .inputs{
- 
   width: 100%;
 }
 input{
@@ -355,6 +354,7 @@ input{
   color: white;
   position: relative;
   width: 100%;
+  margin-bottom: 12px;
 }
 input:hover{
   border: 1px solid #ff4a57;
@@ -483,6 +483,9 @@ textarea:hover{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 3rem ;
+      }
+      input{
+        margin-bottom: 0;
       }
       
 }
