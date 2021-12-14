@@ -5,14 +5,14 @@ import { FiArrowRightCircle } from "react-icons/fi";
 export const portfolio = [
     {
         id:1,
-        img:'./bbad.png',
+        img:'./bg-generator.png',
         title:'Background Generator',
         url:'https://background-generator-mi.netlify.app/',
         icon: <FiArrowRightCircle/>
     },
     {
         id:2,
-        img:'./bag.png',
+        img:'./bbad.png',
         title:'Breaking Bad Cast',
         url:'https://breakbad-mi.netlify.app/',
         icon: <FiArrowRightCircle/>
