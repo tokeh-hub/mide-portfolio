@@ -10,7 +10,7 @@ export default function About() {
             <div className='about-text'>
                  <h1>Hello, I'm Olatunji Aisha</h1>
                  <p style={{marginBottom:'10px'}}>
-                     I am an upcoming frontend developer with the goals of becoming a world class frontend engineer. I live in Lagos,Nigeria.
+                     I am an up and coming frontend developer with the goals of becoming a world class frontend engineer. I live in Lagos,Nigeria.
                      I enjoy reading books on Psychology and seeing movies. I am self-learned and still learning how to build beautiful and 
                      responsive websites,maintaining websites and writing clean codes. 
                  </p>
