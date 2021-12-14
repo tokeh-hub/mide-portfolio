@@ -13,7 +13,7 @@ export default function Welcome() {
                     <h1>I'm{' '}
                         <span>
                             <Typewriter
-                                words={['OLATUNJI Aisha', 'a Frontend-Developer']}
+                                words={['OLATUNJI Aisha', 'a Frontend Developer']}
                                 loop
                                 cursor
                                 cursorStyle='_'
