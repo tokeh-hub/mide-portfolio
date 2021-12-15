@@ -8,6 +8,7 @@ import { useGlobalContext } from '../context';
 export default function Navbar() {
     const[showlinks,setShowLinks] = useState(false)
     const{light,setLight} = useGlobalContext()
+   
     
     const handleClick = (e) => {
         e.preventDefault()
@@ -49,6 +50,7 @@ export default function Navbar() {
                          const {id,url,text} = link
                          return(
                              <li className='link' key={id}>
+                                 
                                  <a className={light?'light-color link':'dark-color link'} href={url} alt='text' onClick={handleClick} >
                                      {text}
                                  </a>
