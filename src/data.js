@@ -4,7 +4,7 @@ import { FaBehance,FaFacebook,FaTwitter,FaLinkedin,FaInstagram } from "react-ico
  export const links = [
     {
         id:1,
-        url:'/',
+        url:'#home',
         text:'Home'
     },
     {

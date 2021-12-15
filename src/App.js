@@ -5,9 +5,11 @@ import About from './components/About';
 import Skills from './components/Skills';
 import { Portfolio } from './components/Portfolio';
 import Contact from './components/Contact';
+import { useGlobalContext } from './context';
 function App() {
+  const{light} = useGlobalContext()
   return (
-    <div className="App">
+    <div className={light?'light-bg':'dark-bg'}>
        <Navbar />
        <div className='content'>
        <Welcome/>

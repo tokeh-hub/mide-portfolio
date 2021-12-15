@@ -1,12 +1,13 @@
 import React from 'react'
 import {portfolio} from '../portfolio'
-
+import { useGlobalContext } from '../context'
 
 export const Portfolio = () => {
+    const{light} = useGlobalContext()
     return (
-        <div className='portfolio-container' id='projects'>
+        <div className={light?'portfolio-container light-color':'portfolio-container dark-color'} id='projects'>
               <div className='portfolio-title'>
-             <h2  style={{color:'white'}}>MY  <span style={{color:'#ff4a57',marginLeft:'7px'}}>PORTFOLIO</span></h2>
+             <h2  className={light?'light-color':'dark-color'}>MY  <span>PORTFOLIO</span></h2>
              <div className='underline'></div>
              </div>
              <div className='projects'>
@@ -21,7 +22,7 @@ export const Portfolio = () => {
                                <div className='card-back'>
                                      <h3>{title}</h3>
                                     
-                                         <a className='arrow' target="_blank"  href={url}>{icon}</a>
+                                         <a className='arrow' target="blank"  href={url}>{icon}</a>
                                 
                                </div>
                            {/* </div> */}

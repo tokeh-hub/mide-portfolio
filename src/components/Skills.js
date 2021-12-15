@@ -1,12 +1,14 @@
 import React from 'react'
-import {FaHtml5,FaCss3,FaReact} from 'react-icons/fa';
-import { SiJavascript} from "react-icons/si";
+import {FaHtml5,FaCss3,FaReact,FaGithub} from 'react-icons/fa';
+import { SiJavascript,SiTypescript} from "react-icons/si";
+import { useGlobalContext } from '../context';
 
 export default function Skills() {
+    const{light} = useGlobalContext()
     return (
-        <div className='skills' id='skills'>
+        <div className={light?'skills light-color':'skills dark-color'} id='skills'>
             <div className='skills-title'>
-             <h2  style={{color:'white'}}>MY  <span style={{color:'#ff4a57',marginLeft:'7px'}}>SKILLS</span></h2>
+             <h2 className={light?'light-color':'dark-color'}>MY  <span >SKILLS</span></h2>
              <div className='underline'></div>
              </div>
              <div className='icons'>
@@ -25,6 +27,14 @@ export default function Skills() {
                  <div className='icon'>
                        <a href='https://www.w3schools.com/js/' style={{color:'#f0db4f'}}><SiJavascript/></a>
                         <h3>JAVASCRIPT</h3>
+                 </div>
+                 <div className='icon'>
+                       <a href='https://www.w3schools.com/js/' className={light?'light-color':'dark-color'}><FaGithub/></a>
+                        <h3>GITHUB</h3>
+                 </div>
+                 <div className='icon'>
+                       <a href='https://www.w3schools.com/js/' style={{color:'#007acc'}}><SiTypescript/></a>
+                        <h3>TYPESCRIPT</h3>
                  </div>
              </div>
         </div>

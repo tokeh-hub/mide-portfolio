@@ -21,7 +21,7 @@ export const portfolio = [
         id:3,
         img:'./grocery.png',
         title:'Grocery List',
-        url:'https://grocery-bud-23.netlify.app/',
+        url:'https://grocery-bud-mi.netlify.app/',
         icon: <FiArrowRightCircle/>
     },
     {

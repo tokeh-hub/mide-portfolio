@@ -1,9 +1,11 @@
 import React from 'react'
 import pic from '../img/aisha2.jpeg'
 import cv from '../img/cv.pdf'
+import { useGlobalContext } from '../context'
 export default function About() {
+    const{light} = useGlobalContext()
     return (
-        <div className='about' id='about'>
+        <div className={light?'about light-color':'about dark-color'} id='about'>
             <div className='about-image'>
             <img src={pic} alt='pic'></img>
             </div>
@@ -14,10 +16,7 @@ export default function About() {
                      I enjoy reading books on Psychology and seeing movies. I am self-learned and still learning how to build beautiful and 
                      responsive websites,maintaining websites and writing clean codes. 
                  </p>
-                 <div className='row'>
-                     <h3>Age</h3>
-                     <p>:25</p>
-                 </div>
+                 
                  <div className='row'>
                      <h3>Phone-Number</h3>
                      <p>:08161806852</p>

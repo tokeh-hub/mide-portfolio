@@ -9,18 +9,40 @@ body,html{
   height: 100%;
   font-size: 15px;
   font-weight: 400;
-  background-color: #1F2235;
+  /* background-color: #1F2235; */
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+.dark-bg{
+  background-color: #1F2235;
+}
+.light-bg{
+  background-color: white;
+  color: black;
+}
+.light-color{
+  color: black;
+}
+.dark-color{
+  color: white;
 }
 ul{
   list-style-type: none;
 }
+h3{
+  font-size: 13px;
+}
+h1{
+  font-size: 25px;
+}
+
 
 .navbar {
-  
+  position: sticky;
+  z-index: 2;
   box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);;
-  background-color: transparent;
-  /* height: 64px; */
+  /* background-color: #1F2235;; */
+  top: 0;
   
 }
 
@@ -32,7 +54,6 @@ ul{
 .btn-toggle{
   background: transparent;
   border: none;
-  color: white;
   font-size: 30px;
   cursor: pointer;
   transition: all 3s linear;
@@ -43,7 +64,6 @@ ul{
 }
 .content{
   max-height: calc(100%-64px);
-  
 }
 .logo{
   font-size: 40px;
@@ -53,7 +73,6 @@ ul{
 }
 a{
   text-decoration: none;
-  color: white;
 }
 .links-container{
   height: 0px;
@@ -66,8 +85,8 @@ a{
   padding: 2rem 1rem;
   transition: all 3s linear;
   letter-spacing: 4px;
-  color: white;
   font-weight: 600;
+  cursor: pointer;
 }
 .link{
   margin-bottom:10px;
@@ -77,7 +96,7 @@ a{
          padding-left: 1.5rem;
 }
 .show-links{
-  height: 8rem;
+  height: 12rem;
 }
 
 .welcome-section{
@@ -92,14 +111,11 @@ a{
   color: #ff4a57;
   text-transform: uppercase;
 }
-.welcome-section h1 {
-        font-size: 40px;
-        color: white;
+.welcome-section h1 { 
         margin-top: 10px;
         margin-bottom: 10px;
 }
 .welcome-section p{
-  color: white;
   line-height: 40px;
 }
 .social-icons{
@@ -107,61 +123,78 @@ a{
   margin-top: 20px;
 }
 .social{
-  width: 30px;
-  height: 30px;
-  border: 1px solid white;
+  
+}
+.social-light{
+  border: 1px solid #ff4a57;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: transparent;
   margin: 0 0.5rem;
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.social-dark{
+  border: 1px solid white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-dark:hover{
+  background-color: white;
+  color: black;
+}
+.social-light:hover{
+  background-color: #ff4a57;
+  color: white;
+}
+.social-dark a{
+  font-size: 17px;
+  margin-top: 3px;
+  color: white;
+  padding: 1rem;
+}
+.social-light a{
+  font-size: 17px;
+  margin-top: 3px;
+  color: #ff4a57;
+  padding: 1rem;
+}
+.social-dark a:hover{
+  color: black;
+}
+.social-light a:hover{
+  color: white;
+}
 .image-container{
   width: 90%;
-  /* height: 90%; */
-  /* border-radius: 50%; */
   margin: 0 auto;
   margin-top: 20px;
-
 }
 img{
   height: 100%;
   width:100% ;
-  /* border-radius: 50%; */
   vertical-align: middle;
   border: 0;
+}
 
-}
-.social a{
-  color: white;
-  transition: all 3s linear;
-  font-size: 14px;
-  margin-top: 3px;
-}
-.social-icons a:hover{
-  background-color: white;
-  color: black;
-}
-.sticky{
-  position: sticky;
-  top: 0;
-  /* z-index: 10; */
-}
 .about{
   max-width: 1300px ;
   margin: 0 auto;
   height: auto;
   padding: 1rem;
   margin-top: 80px;
-  color: white;
-  line-height: 40px;
+    line-height: 40px;
 }
 .about-image{
   width: 90%;
-  /* height: 90%; */
-  /* border-radius: 50%; */
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -180,7 +213,13 @@ img{
   padding: 15px;
   background-color: #ff4a57;
   border-radius: 5px;
-  margin-top: 12px;
+  margin-top: 15px;
+}
+.btn a{
+  color: white;
+}
+.other-color{
+  color: #ff4a57;
 }
 .skills {
   max-width: 1300px ;
@@ -188,7 +227,7 @@ img{
   height: auto;
   padding: 1rem;
   margin-top: 80px;
-  color: white;
+  
 }
 .skills-title{
   display: flex;
@@ -197,8 +236,17 @@ img{
   align-items: center;
   margin-bottom: 70px;;
 }
+.skills h3{
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
 .skills h2,.portfolio-title h2,.contact h2{
-  font-size: 42px;
+  font-size: 25px;
+}
+.skills h2 span,.portfolio-title h2 span,.contact h2 span{
+  color: #ff4a57;
+  margin-left: 7px;
 }
 .underline{
   border-bottom: 2px solid #ff4a57;
@@ -218,10 +266,10 @@ img{
   margin-bottom: 20px;
 }
 .icon a{
-  font-size: 15rem;
+  font-size: 13rem;
 }
 .icon h3{
-  margin-top: -80px;
+  margin-top: -50px;
   font-weight: 700;
 }
 .portfolio-container {
@@ -230,7 +278,7 @@ img{
   height: auto;
   padding: 1rem;
   margin-top: 80px;
-  color: white;
+  padding-bottom: 20px;
   /* position: relative; */
 }
 .portfolio-title{
@@ -348,7 +396,7 @@ form{
 input{
   background-color: transparent;
   border: none;
-  border: 1px solid white;
+  
   height: 50px;
   outline: none;
   color: white;
@@ -356,12 +404,19 @@ input{
   width: 100%;
   margin-bottom: 12px;
 }
+.border-light{
+   border: 1px solid rgb(114, 113, 113);
+}
+.border-dark{
+     border: 1px solid white;
+}
 input:hover{
   border: 1px solid #ff4a57;
 }
 input[type='text'],input[type='email']{
   padding-left: 10px;
 }
+
 
 input::placeholder{
         left: 10px !important;
@@ -378,7 +433,7 @@ textarea{
   height: 250px;
   background-color: transparent;
   border: none;
-  border: 1px solid white;
+  
   color: white;
   outline: none;
   padding-left: 8px;
@@ -401,6 +456,27 @@ textarea:hover{
   background-color: white;
   color: #ff4a57;
 }
+.light{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+  /* transition: all 3s linear; */
+}
+.dark{
+  background: none;
+  border: none;
+  color: #1F2235;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+  /* transition: all 3s linear; */
+}
+.btn-container{
+  display: flex;
+}
 @media screen and (min-width:600px) {
           .about{
             display: grid;
@@ -412,16 +488,24 @@ textarea:hover{
             gap: 10rem;
           }
           .icon a{
-            font-size: 10rem;
+            font-size: 6rem;
           }
           .icon h3{
-            margin-top: -50px;
+            margin-top: -20px;
           }
           .projects{
             display: grid;
             grid-template-columns: repeat(2,1fr);
           }
-          
+          h1{
+            font-size: 30px;
+          }
+          .skills h2,.portfolio-title h2,.contact h2{
+            font-size: 30px;
+          }
+          .image-container{
+            margin-top: 20px;
+          }
 
 }
 
@@ -433,6 +517,12 @@ textarea:hover{
         padding: 1rem;
         max-width: 1300px;
         margin:  0 auto;
+      }
+      h1{
+        font-size: 40px;
+      }
+      .skills h2,.portfolio-title h2,.contact h2{
+        font-size: 42px;
       }
       .nav-header{
         padding: 0;
@@ -472,7 +562,7 @@ textarea:hover{
         grid-template-columns: auto auto auto;
       }
       .icon a{
-        font-size: 13rem;
+        font-size: 10rem;
       }
       .projects{
         display: grid;
@@ -486,6 +576,9 @@ textarea:hover{
       }
       input{
         margin-bottom: 0;
+      }
+      .image-container{
+        margin-top: -80px;
       }
       
 }
