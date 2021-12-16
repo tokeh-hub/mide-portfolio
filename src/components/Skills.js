@@ -30,7 +30,7 @@ export default function Skills() {
                  </div>
                  <div className='icon'>
                        <a href='https://www.w3schools.com/js/' className={light?'light-color':'dark-color'}><FaGithub/></a>
-                        <h3>GITHUB</h3>
+                        <h3>GIT</h3>
                  </div>
                  <div className='icon'>
                        <a href='https://www.w3schools.com/js/' style={{color:'#007acc'}}><SiTypescript/></a>
