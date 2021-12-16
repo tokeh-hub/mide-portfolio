@@ -11,13 +11,12 @@ function App() {
   return (
     <div className={light?'light-bg':'dark-bg'}>
        <Navbar />
-       <div className='content'>
        <Welcome/>
        <About/>
        <Skills/>
        <Portfolio/>
        <Contact/>
-       </div>
+       
     </div>
   );
 }

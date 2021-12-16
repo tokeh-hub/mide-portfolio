@@ -34,7 +34,7 @@ export default function Welcome() {
                             const {id,url,icon} = social
                             return(
                                 <li key={id} className={light?'social social-light':'social social-dark'}>
-                                    <a target='_blank' href={url}>{icon}</a>
+                                    <a target='_blank' rel="noreferrer" href={url}>{icon}</a>
                                 </li>
                             )
                         })}
