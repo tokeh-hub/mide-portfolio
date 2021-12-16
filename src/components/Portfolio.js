@@ -22,7 +22,7 @@ export const Portfolio = () => {
                                <div className='card-back'>
                                      <h3>{title}</h3>
                                     
-                                         <a className='arrow' target="blank"  href={url}>{icon}</a>
+                                         <a className='arrow' target="_blank"  href={url}>{icon}</a>
                                 
                                </div>
                            {/* </div> */}

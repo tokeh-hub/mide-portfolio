@@ -39,10 +39,11 @@ export default function Navbar() {
             <div className='nav-center'>
                 <header className='nav-header' id="header">
                     <h2 className='logo'>Aisha</h2>
-                    <div className='btn-container'>
                     <button className={light?'btn-toggle light-color':'btn-toggle dark-color'} onClick={()=>setShowLinks(!showlinks)}><FaBars/></button> 
+                    <div className='toggle'>
                     <button className={light?'dark':'light'} onClick={()=>setLight(!light)}><IoBulbOutline/></button> 
                     </div>
+                    
                 </header>
                 <div className={showlinks?'links-container show-links':'links-container'}>
                 <ul className='links'>

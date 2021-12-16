@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBehance,FaFacebook,FaTwitter,FaLinkedin,FaInstagram } from "react-icons/fa";
+import { FaGithub,FaFacebook,FaTwitter,FaLinkedin,FaInstagram } from "react-icons/fa";
 
  export const links = [
     {
@@ -32,27 +32,27 @@ import { FaBehance,FaFacebook,FaTwitter,FaLinkedin,FaInstagram } from "react-ico
 export const socials =[
     {
         id:1,
-        url:'https://www.twitter.com',
+        url:'http://twitter.com/[mideyy___]',
         icon: <FaTwitter/>
     },
     {
         id:2,
-        url:'https://www.twitter.com',
-        icon: <FaBehance/>
+        url:'https://github.com/tokeh-hub',
+        icon: <FaGithub/>
     },
     {
         id:3,
-        url:'https://www.twitter.com',
+        url:'https://www.linkedin.com/in/aisha-olatunji-2670501b7/',
         icon: <FaLinkedin/>
     },
     {
         id:4,
-        url:'https://www.twitter.com',
+        url:'https://web.facebook.com/profile.php?id=100006736547122',
         icon: <FaFacebook/>
     },
     {
         id:5,
-        url:'https://www.twitter.com',
+        url:'https://www.instagram.com/ayeeshalore/',
         icon: <FaInstagram/>
     }
 ]
