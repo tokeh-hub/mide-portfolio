@@ -11,7 +11,7 @@ const Result = () =>{
 }
 
 export default function Contact() {
-    const[result,setResult] = useState(true)
+    const[result,setResult] = useState(false)
     const{light} = useGlobalContext()
     // const form = useRef();
     const sendEmail = (e) => {
