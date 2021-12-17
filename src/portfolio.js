@@ -45,5 +45,12 @@ export const portfolio = [
         title:'Fylo Landing Page',
         url:'https://toke.netlify.app/',
         icon: <FiArrowRightCircle/>
+    },
+    {
+        id:7,
+        img:'./lorem.png',
+        title:'Text Generator',
+        url:'https://text-generator-mi.netlify.app/',
+        icon: <FiArrowRightCircle/>
     }
 ]
