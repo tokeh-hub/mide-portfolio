@@ -18,12 +18,12 @@ export default function About() {
                  </p>
                  
                  <div className='row'>
-                     <h3>Phone-Number</h3>
+                     <h3>Phone</h3>
                      <p>:08161806852</p>
                  </div>
                  <div className='row'>
                      <h3>Email</h3>
-                     <p>olatunjiaisha12@gmail.com</p>
+                     <p>:olatunjiaisha12@gmail.com</p>
                  </div>
                 <button className='btn'><a href={cv} download>Download CV</a></button>
                  

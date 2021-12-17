@@ -38,22 +38,9 @@ export const portfolio = [
         url:'https://stripe-mi.netlify.app/',
         icon: <FiArrowRightCircle/>
     },
+    
     {
         id:6,
-        img:'./cv-clone.png',
-        title:'Portfolio clone',
-        url:'https://sumaya.netlify.app/',
-        icon: <FiArrowRightCircle/>
-    },
-    {
-        id:7,
-        img:'./bag.png',
-        title:'Shopping Bag',
-        url:'https://cart-mi.netlify.app/',
-        icon: <FiArrowRightCircle/>
-    },
-    {
-        id:8,
         img:'./fylo.png',
         title:'Fylo Landing Page',
         url:'https://toke.netlify.app/',

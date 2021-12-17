@@ -47,11 +47,11 @@ export default function Contact() {
              
              <form action='' onSubmit={sendEmail}>
                  <div className='inputs'>
-                 <input className={light?'border-light':'border-dark'} type='text' placeholder='Full-name' name='fullname' required ></input>
-                 <input className={light?'border-light':'border-dark'} type='email' placeholder='Email' name='email' required ></input>
-                 <input className={light?'border-light':'border-dark'} type='number' placeholder='Phone'  name='phone' required ></input>
+                 <input className={light?'border-light light-color':'border-dark dark-color'} type='text' placeholder='Full-name' name='fullname' required ></input>
+                 <input className={light?'border-light light-color':'border-dark dark-color'} type='email' placeholder='Email' name='email' required ></input>
+                 <input className={light?'border-light light-color':'border-dark dark-color'} type='number' placeholder='Phone'  name='phone' required ></input>
                  </div>
-                 <textarea className={light?'border-light':'border-dark'} placeholder='Your Message' name='message'></textarea>
+                 <textarea className={light?'border-light light-color':'border-dark dark-color'} placeholder='Your Message' name='message'></textarea>
                  <button type='submit' className='submit'>Send Message</button>
              </form>
              
