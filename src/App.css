@@ -65,6 +65,7 @@ h1{
 .btn-toggle:hover{
   color: #ff4a57;
   transform: rotate(90deg);
+  padding-right: 20px;
 }
 
 .toggle{
