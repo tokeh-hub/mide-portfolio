@@ -39,7 +39,7 @@ export default function Contact() {
                        <div className='cancel' >
                       <FaTimes onClick={()=>setResult(false)}/>
                       </div>
-                      <Result/> 
+                      <Result/>
                       </div>   
                 </div>  
             : null}

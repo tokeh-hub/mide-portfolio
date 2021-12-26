@@ -134,9 +134,7 @@ a{
   display: flex;
   margin-top: 20px;
 }
-.social{
-  
-}
+
 .social-light{
   border: 1px solid #ff4a57;
   width: 35px;
@@ -280,7 +278,7 @@ img{
   align-items: center;
   margin-bottom: 20px;
 }
-.icon a{
+.icon article{
   font-size: 13rem;
 }
 .icon h3{
