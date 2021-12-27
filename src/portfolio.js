@@ -52,5 +52,12 @@ export const portfolio = [
         title:'Text Generator',
         url:'https://text-generator-mi.netlify.app/',
         icon: <FiArrowRightCircle/>
+    },
+    {
+        id:8,
+        img:'./phone-verify.png',
+        title:'Phone Validator',
+        url:'https://phoneverify-mi.netlify.app/',
+        icon: <FiArrowRightCircle/>
     }
 ]
