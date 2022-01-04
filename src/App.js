@@ -7,16 +7,16 @@ import { Portfolio } from './components/Portfolio';
 import Contact from './components/Contact';
 import { useGlobalContext } from './context';
 function App() {
-  const{light} = useGlobalContext()
+  const { light } = useGlobalContext()
   return (
-    <div className={light?'light-bg':'dark-bg'}>
-       <Navbar />
-       <Welcome/>
-       <About/>
-       <Skills/>
-       <Portfolio/>
-       <Contact/>
-       
+    <div className={light ? 'light-bg' : 'dark-bg'}>
+      <Navbar />
+      <Welcome />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contact />
+
     </div>
   );
 }

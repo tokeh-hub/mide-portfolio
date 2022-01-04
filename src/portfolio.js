@@ -59,5 +59,26 @@ export const portfolio = [
         title:'Phone Validator',
         url:'https://phoneverify-mi.netlify.app/',
         icon: <FiArrowRightCircle/>
+    },
+    {
+        id:9,
+        img:'./currency.png',
+        title:'Currency Converter',
+        url:'https://currencyconvertr.netlify.app/',
+        icon: <FiArrowRightCircle/>
+    },
+    {
+        id:8,
+        img:'./mitodo.png',
+        title:'My Todo',
+        url:'https://midetodo.netlify.app/',
+        icon: <FiArrowRightCircle/>
+    },
+    {
+        id:8,
+        img:'./rps.png',
+        title:'Rock Paper Scissors',
+        url:'https://quirky-meitner-f05e1a.netlify.app/',
+        icon: <FiArrowRightCircle/>
     }
 ]
