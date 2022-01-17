@@ -1,6 +1,6 @@
 import React from 'react'
 import pic from '../img/aisha2.jpeg'
-import cv from '../img/cv.pdf'
+import cv from '../img/mide.pdf'
 import { useGlobalContext } from '../context'
 export default function About() {
     const{light} = useGlobalContext()
