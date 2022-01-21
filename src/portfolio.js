@@ -68,17 +68,24 @@ export const portfolio = [
         icon: <FiArrowRightCircle/>
     },
     {
-        id:8,
+        id:10,
         img:'./mitodo.png',
         title:'My Todo',
         url:'https://midetodo.netlify.app/',
         icon: <FiArrowRightCircle/>
     },
     {
-        id:8,
+        id:11,
         img:'./rps.png',
         title:'Rock Paper Scissors',
         url:'https://quirky-meitner-f05e1a.netlify.app/',
+        icon: <FiArrowRightCircle/>
+    },
+    {
+        id:12,
+        img:'./bmi.png',
+        title:'Adult BMI Checker',
+        url:'https://mide-bmi.netlify.app/',
         icon: <FiArrowRightCircle/>
     }
 ]
