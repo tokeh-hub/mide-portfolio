@@ -1,7 +1,6 @@
 import React from 'react'
 import {portfolio} from '../portfolio'
 import { useGlobalContext } from '../context'
-import ScrollAnimation from "react-animate-on-scroll";
 
 export const Portfolio = () => {
     const{light} = useGlobalContext()
