@@ -1,6 +1,7 @@
 import React from 'react'
 import {portfolio} from '../portfolio'
 import { useGlobalContext } from '../context'
+import ScrollAnimation from "react-animate-on-scroll";
 
 export const Portfolio = () => {
     const{light} = useGlobalContext()
@@ -11,6 +12,7 @@ export const Portfolio = () => {
              <div className='underline'></div>
              </div>
              <div className='projects'>
+            
                  {portfolio.map(item=>{
                      const {id,url,img,title,icon} = item
                      return(
@@ -29,6 +31,7 @@ export const Portfolio = () => {
                          </article>
                      )
                  })}
+                
              </div>
         </div>
     )

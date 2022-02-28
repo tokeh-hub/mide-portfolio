@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import { Portfolio } from './components/Portfolio';
 import Contact from './components/Contact';
 import { useGlobalContext } from './context';
+import "animate.css/animate.min.css";
 function App() {
   const { light } = useGlobalContext()
   return (
