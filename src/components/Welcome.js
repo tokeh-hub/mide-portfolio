@@ -4,13 +4,11 @@ import { socials } from '../data'
 import pic from '../img/compressed-me.jpg'
 import { useGlobalContext } from '../context'
 
-// import "react-simple-typewriter/dist/index.css"
-
 export default function Welcome() {
     const{light} = useGlobalContext()
     return (
         <div className='welcome-section' id='home' >
-            <div>
+            <div data-aos="fade-left">
                     <h3><strong>Welcome!</strong></h3>
                     <h1 className={light?'light-color':'dark-color'}>I'm{' '}
                         <span>
@@ -40,7 +38,7 @@ export default function Welcome() {
                         })}
                     </ul>
             </div>
-            <div className='image-container'>
+            <div data-aos="fade-right" className='image-container'>
                 <img src={pic} alt='pic'></img>
             </div>
         </div>

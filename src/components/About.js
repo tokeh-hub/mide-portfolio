@@ -5,11 +5,11 @@ import { useGlobalContext } from '../context'
 export default function About() {
     const{light} = useGlobalContext()
     return (
-        <div className={light?'about light-color':'about dark-color'} id='about'>
-            <div className='about-image'>
+        <div data-aos="fade-up" className={light?'about light-color':'about dark-color'} id='about'>
+            <div data-aos="fade-right" className='about-image'>
             <img src={pic} alt='pic'></img>
             </div>
-            <div className='about-text'>
+            <div data-aos="fade-left" className='about-text'>
                  <h1>Hello, I'm Olatunji Aisha</h1>
                  <p style={{marginBottom:'10px'}}>
                      I am an up and coming frontend developer with the goals of becoming a world class frontend engineer. I live in Lagos,Nigeria.

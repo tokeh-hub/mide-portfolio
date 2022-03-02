@@ -27,7 +27,7 @@ export default function Contact() {
           setResult(true)
       };
     return (
-        <div className='contact' id='contact'>
+        <div data-aos="fade-up" className='contact' id='contact'>
              <div className='contact-title'>
              <h2  className={light?'light-color':'dark-color'}>CONTACT  <span>ME</span></h2>
              <div className='underline'></div>
