@@ -8,7 +8,7 @@ import { useGlobalContext } from '../context';
 export default function Navbar() {
     const [showlinks, setShowLinks] = useState(false)
     const { light, setLight } = useGlobalContext()
-
+    const [activeButton, setActiveButton] = useState(0)
 
     const handleClick = (e) => {
         e.preventDefault()
@@ -35,24 +35,24 @@ export default function Navbar() {
 
     return (
 
-        <nav data-aos="fade-up" className={light ? 'navbar light-bg' : 'navbar dark-bg'}>
+        <nav className={light ? 'navbar light-bg' : 'navbar dark-bg'}>
             <div className='nav-center'>
                 <header className='nav-header' id="header">
                     <h2 className='logo'>Aisha</h2>
                     <button className={light ? 'btn-toggle light-color' : 'btn-toggle dark-color'} onClick={() => setShowLinks(!showlinks)}><FaBars /></button>
-                    <div data-aos="fade-left" className='toggle'>
+                    <div className='toggle'>
                         <button className={light ? 'dark' : 'light'} onClick={() => setLight(!light)}><IoBulbOutline /></button>
                     </div>
 
                 </header>
                 <div className={showlinks ? 'links-container show-links' : 'links-container'}>
                     <ul className='links'>
-                        {links.map(link => {
+                        {links.map((link,index) => {
                             const { id, url, text } = link
+                            console.log(typeof id)
                             return (
-                                <li data-aos="fade-left" className='link' key={id}>
-
-                                    <a className={light ? 'light-color link' : 'dark-color link'} href={url} alt='text' onClick={handleClick} >
+                                <li className='link' key={id} onClick={()=>setActiveButton(index)}>
+                                    <a className={light ? `light-color link ${activeButton === index ? 'active' : 'null'}` : `dark-color link ${activeButton === index ? 'active' : null}`} href={url} alt='text' onClick={handleClick} >
                                         {text}
                                     </a>
                                 </li>

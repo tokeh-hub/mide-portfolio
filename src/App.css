@@ -12,6 +12,10 @@ body,html{
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+.active{
+  color: #ff4a57 !important;
+}
+
 .dark-bg{
   background-color: #1F2235;
 }
@@ -61,7 +65,7 @@ h1{
 }
 .btn-toggle:hover{
   color: #ff4a57;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 .toggle{
@@ -90,7 +94,7 @@ a{
   font-size: 15px;
   text-transform: uppercase;
   padding: 2rem 1rem;
-  transition: all 3s linear;
+  /* transition: all 3s linear; */
   letter-spacing: 4px;
   font-weight: 600;
   cursor: pointer;
@@ -100,12 +104,10 @@ a{
 }
 .links a:hover{
          color: #ff4a57;
-         padding-left: 1rem
 }
 .show-links{
   height: 12rem;
 }
-
 .welcome-section{
   max-width: 1300px ;
   margin: 0 auto;
@@ -315,20 +317,15 @@ img{
   background-color: transparent;
 }
 
-
-
 .card:hover .card-front {
-  opacity: 0;
- 
+  opacity: 0; 
 }
 .card:hover .card-back{
   opacity: 1;
   background-color: #ff4a57;
 }
 
-
 .card-back {
-
   color: white;
   padding: 20px;
   display: flex;
@@ -353,7 +350,6 @@ img{
        font-weight: 1000;
        text-transform: uppercase;
        letter-spacing: 5px;
-
 }
 .arrow{
   font-size: 45px;
@@ -484,7 +480,6 @@ textarea:hover{
 }
 .overlay {
   position: fixed;
-  /* display: none; */
   width: 100%;
   height: 100%;
   top: 0;
@@ -582,12 +577,11 @@ textarea:hover{
         padding: 15px
       }
       .link a{
-        /* padding: 0; */
         margin: 0 0.5rem;
       }
       .links a:hover {
-        padding: 0;
-        background: transparent;
+        /* padding: 0; */
+        /* background: transparent; */
       }
       .welcome-section{
         display: flex;
