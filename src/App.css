@@ -44,7 +44,7 @@ h1{
 
 .navbar {
   position: sticky;
-  /* z-index: 2; */
+  z-index: 2;
   box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);;
   top: 0;
   
