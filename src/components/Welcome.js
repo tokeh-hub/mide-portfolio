@@ -8,11 +8,7 @@ export default function Welcome() {
     const{light} = useGlobalContext()
 
     const data = ["a","b","c"]
-//     useEffect(()=>{
-//         setX(data)
-//     },[])
-// console.log(x,"Welcome")
-    
+
     return (
         <div className='welcome-section' id='home' >
             <div data-aos="fade-left">
