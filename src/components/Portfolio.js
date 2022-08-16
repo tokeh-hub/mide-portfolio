@@ -5,6 +5,8 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 export const Portfolio = () => {
     const{light} = useGlobalContext()
+    
+    // console.log(x,"Portfolio")
     useEffect(()=>{
         Aos.init({ duration: 2000 })
     }, [])

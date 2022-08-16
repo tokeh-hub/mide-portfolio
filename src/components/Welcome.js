@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import { socials } from '../data'
 import pic from '../img/compressed-me.jpg'
@@ -6,6 +6,13 @@ import { useGlobalContext } from '../context'
 
 export default function Welcome() {
     const{light} = useGlobalContext()
+
+    const data = ["a","b","c"]
+//     useEffect(()=>{
+//         setX(data)
+//     },[])
+// console.log(x,"Welcome")
+    
     return (
         <div className='welcome-section' id='home' >
             <div data-aos="fade-left">
